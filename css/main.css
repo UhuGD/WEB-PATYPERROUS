@@ -136,6 +136,17 @@ body{
 
 h2{
   text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+h2::after{
+  content: '';
+  margin:0 auto;
+  background-image: url(../img/separador.png);
+  height: 30px;
+  width: 100px;
+  display:block;
+
 }
 /* Header */
 
@@ -145,8 +156,23 @@ div.espacio-logo{
   height:50px;
   clear:none;
   margin-left: 50px;
+}
+  @media only screen and (min-width:992px){
+
+  /* ACHICAR BANNER EN PANTALLA GRANDE?? */
+
+  /* div.espacio-banner{
+    width:95%;
+    margin: 0 auto;
+  }
+  .banner{
+    width: 95%;
+    height: auto;
+  } */
 
 }
+
+
 @media only screen and (min-width:768px){
   div.espacio-logo{
     width:200px;
@@ -246,9 +272,43 @@ div.menu-movil span:first-child{
 }
 
 
+/* IMAGENES Y DESCRIPCION ABAJO DEL BANNER */
 
+div.bajobanner{
+  text-align: center;
+}
 
+div.imagenes-bajobanner{
+  display:block;
+  width: 70%;
+  margin:0 auto;
+}
+div.imagenes-bajobanner img{
+  width: 70%;
+  border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+  margin:0 auto;
+  padding-bottom: 10px;
+}
+div.imagenes-bajobanner p{
+   padding-bottom: 10px;
+}
 
+@media only screen and (min-width:768px){
+  div.bajobanner{
+    text-align: center;
+    padding-top: 10px;
+
+  }
+  div.imagenes-bajobanner{
+    display:inline-block;
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+}
 
 
 
