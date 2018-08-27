@@ -110,6 +110,13 @@ body{
   /* FUENTES  */
 }
 
+p{
+  font-size: 1.5em;
+}
+li{
+font-size: 1.5em;
+}
+
 /* GLOBALES */
 
 .contenedor{
@@ -293,6 +300,7 @@ div.imagenes-bajobanner img{
 }
 div.imagenes-bajobanner p{
    padding-bottom: 10px;
+   height:54px;
 }
 
 @media only screen and (min-width:768px){
@@ -309,13 +317,84 @@ div.imagenes-bajobanner p{
 
   }
 }
+div.servicio{
+  width: 80%;
+}
+div.servicio ul{
+  text-align:left;
+  padding-left: 0;
+}
+div.servicio ul li:nth-child(even){
+  text-align: right;
+}
+
+div.servicio ul li{
+ list-style: none;
+ padding-top:30px;
+ padding-bottom: 30px;
+ padding-left: 40px;
+ padding-right: 40px;
+ background-color: #006699;
+ color: white;
+}
+
+div.servicio ul li img{
+  float:right;
+  position: relative;
+top: 50%;
+transform: translateY(-30%);
+  height:50px;
+  width:auto;
+
+}
+
+div.servicio ul li.izq img{
+  float:left;
+}
+
+div.quienes img{
+  width:100%;
+  height:auto;
+}
+
+@media only screen and (min-width:768px){
+  div.servicio{
+    width:384px;
+  }
+
+div.servicio ul li{
+  padding-top:30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+}
+
+div.quienes img{
+  float:left;
+  width: 60%;
+}
+div.quienes p{
+  float:right;
+  width:40%;
+  margin:0;
+}
+div.ubicacion img{
+  float:right;
+  width: 50%;
+}
+div.ubicacion p{
+float:left;
+width: 50%;
+padding-top: 100px;
+}
 
 
-
-
-
-
-
+footer{
+  background:#006699;
+  height: 120px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
