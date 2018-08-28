@@ -317,38 +317,47 @@ div.imagenes-bajobanner p{
 
   }
 }
-div.servicio{
-  width: 80%;
+div.precio{
+  width:50%;
+  float:right;
 }
-div.servicio ul{
+div.precio img{
+  width:100%;
+}
+div.listado{
+  width: 50%;
+  float:left;
+}
+
+div.listado ul{
   text-align:left;
   padding-left: 0;
 }
-div.servicio ul li:nth-child(even){
+div.listado ul li:nth-child(even){
   text-align: right;
 }
 
-div.servicio ul li{
+div.listado ul li{
  list-style: none;
  padding-top:30px;
  padding-bottom: 30px;
  padding-left: 40px;
  padding-right: 40px;
- background-color: #006699;
+ background-color: #c4b0b0;
  color: white;
 }
 
-div.servicio ul li img{
+div.listado ul li img{
   float:right;
   position: relative;
-top: 50%;
-transform: translateY(-30%);
+  top: 50%;
+  transform: translateY(-30%);
   height:50px;
   width:auto;
 
 }
 
-div.servicio ul li.izq img{
+div.listado ul li.izq img{
   float:left;
 }
 
@@ -358,11 +367,11 @@ div.quienes img{
 }
 
 @media only screen and (min-width:768px){
-  div.servicio{
+  div.listado{
     width:384px;
   }
 
-div.servicio ul li{
+div.listado ul li{
   padding-top:30px;
   padding-bottom: 30px;
   padding-left: 50px;
@@ -387,7 +396,7 @@ div.ubicacion img{
 div.ubicacion p{
 float:left;
 width: 50%;
-padding-top: 100px;
+padding-top: 100px;r
 }
 
 
