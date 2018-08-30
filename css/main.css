@@ -110,12 +110,7 @@ body{
   /* FUENTES  */
 }
 
-p{
-  font-size: 1.5em;
-}
-li{
-font-size: 1.5em;
-}
+
 
 /* GLOBALES */
 
@@ -142,6 +137,8 @@ font-size: 1.5em;
 }
 
 h2{
+  font-family: 'Open Sans', sans-serif;
+  font-style: extra-bold;
   text-align: center;
   font-size: 2em;
   text-transform: uppercase;
@@ -155,6 +152,27 @@ h2::after{
   display:block;
   margin-top: 10px;
 }
+li{
+font-size: 1em;
+font-family: 'Open Sans', sans-serif;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+h3{
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+a{
+  font-family: 'Open Sans', sans-serif;
+  font-style: light;
+}
+
+
+
+
 
 /* Header */
 
@@ -164,6 +182,7 @@ div.espacio-logo{
   height:50px;
   clear:none;
   margin-left: 50px;
+  padding-bottom: 1px;
 }
   @media only screen and (min-width:992px){
 
@@ -201,9 +220,8 @@ div.espacio-logo{
 }
 
 div.espacio-banner{
-
   background-position: top center;
-  background-color:#004255;
+  background-color:white;
 }
 
 .banner{
@@ -217,21 +235,24 @@ nav.atajos{
   clear:none;
   text-align: right;
   font-size: 1.3em;
-  background:#004255;
+  background:white;
+  border-bottom: solid 1px black;
+
 }
 
 nav.atajos a{
   display:none;
-  color: #ffffff;
+  color: black;
   text-decoration: none;
+  padding-bottom: 20px;
+  font-size: 0.8em;
+  color: #4f4f4f;
 }
 
 nav.atajos a:hover{
-  background-color: #06B2F8;
+  font-size: 0.85em;
+  color: black;
   transition: all .5s ease;
-  color: #ffffff;
-
-
 }
 @media only screen and (min-width:768px){
   nav.atajos{
@@ -239,12 +260,20 @@ nav.atajos a:hover{
   }
   nav.atajos a{
   display:inline-block;
-  margin-right: 10px;
-  padding: 11px 10px;
+  margin-right: 15px;
+  padding: 11px;
+  padding-right: 0px;
+  padding-left:0px;
   }
-
+  nav.atajos a span{
+    padding-right: 15px;
+    border-right: solid 0.5px #DADADA;
+}
 nav.atajos a:last-child{
   margin-right: 50px;
+}
+nav.atajos a:last-child span{
+  border-right: none;
 }
 }
 @media only screen and (min-width:992px){
@@ -253,20 +282,30 @@ nav.atajos a:last-child{
   }
 }
 
+div.espacio-banner img{
+  border-top: solid 1px #d3d3d3;
+}
 
+@media only screen and (min-width:768px){
+  div.espacio-banner img{
+    border-top: solid 0px #000000;
+  }
+}
 div.menu-movil{
   float:right;
   width:70px;
   height:50px;
   padding-right:20px;
-  background:#004255;
+  background:white;
   text-align: right;
+
 }
+
 div.menu-movil span{
   height:7px;
   margin-bottom: 5px;
   margin-top:5px;
-  background-color: white;
+  background-color: #DADADA;
   display:block;
   padding-top:5px;
 }
@@ -288,7 +327,7 @@ div.bajobanner{
 
 div.imagenes-bajobanner{
   display:block;
-  width: 70%;
+  width: 50%;
   margin:0 auto;
 }
 div.imagenes-bajobanner img{
@@ -297,10 +336,11 @@ div.imagenes-bajobanner img{
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
   margin:0 auto;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
+
 div.imagenes-bajobanner p{
-   padding-bottom: 10px;
+   margin-bottom: 60px;
    height:54px;
 }
 
@@ -313,9 +353,11 @@ div.imagenes-bajobanner p{
   div.imagenes-bajobanner{
     display:inline-block;
     width: 30%;
-    margin-left: 10px;
-    margin-right: 10px;
-
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  div.imagenes-bajobanner p {
+    margin-bottom: 20px;
   }
 }
 div.precio{
@@ -338,11 +380,15 @@ div.precio ul{
 div.precio ul li{
   border-bottom: solid 1px #000000;
  list-style: none;
- padding-top:37px;
- padding-bottom: 37px;
+ padding-top:19px;
+ padding-bottom: 19px;
  padding-left: 40px;
  padding-right: 40px;
  background-color:#a6a6a6;
+ color:#4f4f4f;
+}
+div.precio ul li:nth-child(even){
+  background-color: #d3d3d3;
 }
 
 div.precio ul li span{
@@ -368,21 +414,26 @@ div.listado ul{
 
 div.listado ul li{
  list-style: none;
- padding-top:30px;
- padding-bottom: 30px;
+ padding-top:15px;
+ padding-bottom: 15px;
  padding-left: 40px;
  padding-right: 40px;
  background-color: #a6a6a6;
  border-bottom: solid 1px #000000;
+ color:#4f4f4f;
+}
 
+div.listado ul li:nth-child(even){
+
+background-color: #D3D3D3;
 }
 
 div.listado ul li img{
   float:right;
   position: relative;
   top: 50%;
-  transform: translateY(-20%);
-  height:50px;
+  transform: translateY(10%);
+  height:30px;
   width:auto;
 }
 
@@ -390,11 +441,11 @@ div.listado ul li img{
 
   div.listado{
     width: 50%;
-    float:left;
+    float:right;
   }
   div.precio{
     width:50%;
-    float:right;
+    float:left;
   }
 }
 @media only screen and (min-width:1200px){
@@ -429,18 +480,18 @@ div.quienes p{
   margin:0;
 }
 div.ubicacion img{
-  float:right;
-  width: 50%;
+  width: 100%;
+  height: 300px;
+
 }
 div.ubicacion p{
-float:left;
-width: 50%;
-padding-top: 100px;r
+
+padding-top: 100px;
 }
 
 
 footer{
-  background:#006699;
+  background:#4f4f4f;
   height: 120px;
 }
 /* ==========================================================================
