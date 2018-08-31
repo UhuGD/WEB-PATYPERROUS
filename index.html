@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -109,13 +111,28 @@
 <div class="seccion contenedor">
   <h2>Ubicacion</h2>
 </div>
-<div class="ubicacion contenedor clearfix">
-  <img src="img/traslado.jpg" alt="">
-  <p>Nos encontramos en Departamental XXXXX y  si te encuentras dentro del area, puedes agendar tu traslado por un costo de $pesos</p>
+<div class="contenedor">
+  <div id='map' class="mapiti" ></div>
 </div>
 
+<div class="direccion-mapa contenedor clearfix">
+  <p>Nos encontramos en <span> Av. Departamental #4029</span>, a pasos de Av. Tobalaba</p>
+</div>
+
+
+
 <footer>
-  asdadaadsasdsadsasdasdaasd
+  <ul class="Clearfix">
+  <div class="nombre">
+    <li>Patyperros - Peluqueria canina con Carino</li>
+    </div>
+  <div class="direccion">
+    <li>Direccion: Av Departamental #XXXX</li>
+    </div>
+  <div class="numero"><li>Telefono: +5698465432</li>
+    </div>
+</ul>
+
 </footer>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

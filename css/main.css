@@ -370,15 +370,15 @@ div.precio img{
 }
 
 div.precio ul{
-  border-right: solid 1px #000000;
+  /* border-right: solid 1px #000000;
   border-top: solid 1px #000000;
-  border-left: solid 1px #000000;
+  border-left: solid 1px #000000; */
   text-align:left;
   padding-left: 0;
 }
 
 div.precio ul li{
-  border-bottom: solid 1px #000000;
+  /* border-bottom: solid 1px #000000; */
  list-style: none;
  padding-top:19px;
  padding-bottom: 19px;
@@ -479,21 +479,57 @@ div.quienes p{
   width:40%;
   margin:0;
 }
-div.ubicacion img{
+div.ubicacion {
+  height: 400px;
+}
+div.direccion-mapa p{
+text-align: center;
+padding-top: 30px;
+}
+div.direccion-mapa span{
+ font-weight: bold;
+
+}
+
+div.mapiti{
   width: 100%;
   height: 300px;
-
 }
-div.ubicacion p{
-
-padding-top: 100px;
+@media only screen and (min-width:768px){
+  div.mapiti{
+    height: 400px;
+  }
 }
-
-
 footer{
   background:#4f4f4f;
   height: 120px;
 }
+footer ul li{
+  padding-top: 10px;
+  list-style: none;
+  color:#DADADA;
+  display:block;
+  width:90%;
+  float:left;
+  text-align: center;
+}
+@media only screen and (min-width:768px){
+
+  footer ul li{
+    padding-top: 45px;
+    display:inline-block;
+    width:30%;
+    float:left;
+    text-align: center;
+  }
+  div.nombre li{
+    text-align: left;
+  }
+  div.numero li{
+    text-align: right;
+  }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
