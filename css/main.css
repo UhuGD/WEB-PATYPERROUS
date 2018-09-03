@@ -242,8 +242,6 @@ nav.atajos{
   text-align: right;
   font-size: 1.3em;
   background:white;
-  border-bottom: solid 1px black;
-
 }
 
 nav.atajos a{
@@ -293,9 +291,7 @@ div.espacio-banner img{
 }
 
 @media only screen and (min-width:768px){
-  div.espacio-banner img{
-    border-top: solid 0px #000000;
-  }
+
 }
 div.menu-movil{
   float:right;
