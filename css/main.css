@@ -219,15 +219,28 @@ div.espacio-logo{
   }
 }
 
+@media only screen and (min-width:768px){
+  div.contenido-header{
+    }
 
+
+  }
+
+
+header{
+  background-image: url(../img/bannernuevo-01.jpg);
+  height:100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .logo{
  width:100%;
  max-height:100%;
 }
 
 div.espacio-banner{
-  background-position: top center;
-  background-color:white;
+  height:100vh;
+  width:100%
 }
 
 .banner{
@@ -236,12 +249,14 @@ div.espacio-banner{
 }
 
 nav.atajos{
+  bac
   display:none;
   height:50px;
   clear:none;
   text-align: right;
   font-size: 1.3em;
   background:white;
+  background-color: rgba(255,255,255,0.5);
 }
 
 nav.atajos a{
@@ -273,10 +288,10 @@ nav.atajos a:hover{
     padding-right: 15px;
     border-right: solid 0.5px #DADADA;
 }
-nav.atajos a:last-child{
+nav.atajos a:nth-child(4){
   margin-right: 50px;
 }
-nav.atajos a:last-child span{
+nav.atajos a:nth-child(4){
   border-right: none;
 }
 }
@@ -286,9 +301,6 @@ nav.atajos a:last-child span{
   }
 }
 
-div.espacio-banner img{
-  border-top: solid 1px #d3d3d3;
-}
 
 @media only screen and (min-width:768px){
 
@@ -298,7 +310,7 @@ div.menu-movil{
   width:70px;
   height:50px;
   padding-right:20px;
-  background:white;
+  background:transparent;
   text-align: right;
 
 }
