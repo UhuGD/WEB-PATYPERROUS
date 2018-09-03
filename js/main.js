@@ -1,3 +1,11 @@
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".contenido-header");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
 (function(){
   'use strict';
   document.addEventListener('DOMContentLoaded', function(){
