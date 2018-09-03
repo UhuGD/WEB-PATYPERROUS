@@ -1,4 +1,4 @@
-(function(){
+function(){
   'use strict';
   document.addEventListener('DOMContentLoaded', function(){
 
@@ -8,7 +8,7 @@
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v10',
         center: [-70.554618,-33.512282],
-        zoom: 15
+        zoom: 15,
     });
     map.on("load", function () {
       /* Image: An image is loaded and added to the map. */
@@ -32,6 +32,11 @@
           });
         });
     });
+<<<<<<< HEAD
   });
 
 })();
+=======
+}
+}
+>>>>>>> 1c23b4122b6889ba32df4b46265aa5f4d693819c
