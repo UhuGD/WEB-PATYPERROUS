@@ -2,6 +2,10 @@
   'use strict';
   document.addEventListener('DOMContentLoaded', function(){
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fe288fe748041abdf56da69dcb7080acf0faac2e
       mapboxgl.accessToken = 'pk.eyJ1IjoidWh1Z2QiLCJhIjoiY2psaDc1ZWNkMWY2dDN2bnV1YmYzZnU4MyJ9.8WRACswJFGARs4Cr2qkGxw';
       var map = new mapboxgl.Map({
         container: 'map',
@@ -31,12 +35,15 @@
           });
         });
     });
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> fe288fe748041abdf56da69dcb7080acf0faac2e
   });
 
 })();
