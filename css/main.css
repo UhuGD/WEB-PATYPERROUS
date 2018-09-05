@@ -137,7 +137,7 @@ body{
 }
 
 h2{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-weight: 400;
   font-size: 2em;
@@ -157,23 +157,23 @@ h2::after{
 }
 li{
 font-size: 1em;
-font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
 p{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   color:#4f4f4f;
 
 }
 h3{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-top: 10px;
   margin-bottom: 5px;
   color:#4f4f4f;
 
 }
 a{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: light;
 }
 
@@ -188,7 +188,7 @@ div.espacio-logo{
   width:200px;
   height:50px;
   clear:none;
-  margin-left: 50px;
+  margin-left: 0px;
   padding-bottom: 1px;
 }
   @media only screen and (min-width:992px){
@@ -216,7 +216,7 @@ div.espacio-logo{
 
 div.espacio-logo{
     width:200px;
-    margin-left: 100px;
+    margin-left: 40px;
   }
 }
 
@@ -283,7 +283,7 @@ nav.atajos a{
 
 nav.atajos a:hover{
   font-size: 0.85em;
-  color: black;
+  color: #0da09c;
   transition: all .5s ease;
 }
 @media only screen and (min-width:768px){
@@ -296,7 +296,7 @@ nav.atajos a:hover{
   .contenido-header.scrolled {
   background-color: #d3d3d3 !important;
   transition: background-color 300ms ease;
-  height: 55px;
+  /* height: 55px; */
 }
   nav.atajos{
     display:block;
@@ -505,19 +505,34 @@ div.imgquienesomos img{
 
 div.imgquienesomos img{
   float:left;
-  width: 60%;
+  width: 67%;
   height:300px;
 }
 div.pquienesomos{
   float:right;
-  width:40%;
+  width:33%;
   margin:0;
   height: 300px;
   background-color: #a6a6a6;
 }
+div.pquienesomos h3{
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-div.pquienesomos p {
+#texto{
+  text
   color:#4f4f4f;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight:400;
+  font-style: italic;
+}
+#cita{
+  color:black; text-align: right;
+  padding-right: 20px;
 }
 div.ubicacion {
   height: 400px;
