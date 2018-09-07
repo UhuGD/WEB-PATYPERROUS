@@ -44,7 +44,17 @@ $('a[href*="#"]')
 (function(){
   'use strict';
   document.addEventListener('DOMContentLoaded', function(){
+    //
 
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+//
 
       mapboxgl.accessToken = 'pk.eyJ1IjoidWh1Z2QiLCJhIjoiY2psaDc1ZWNkMWY2dDN2bnV1YmYzZnU4MyJ9.8WRACswJFGARs4Cr2qkGxw';
       var map = new mapboxgl.Map({

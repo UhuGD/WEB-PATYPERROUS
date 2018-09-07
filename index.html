@@ -38,13 +38,23 @@
           <a href="#quienes-somos"><span>Quienes Somos</span></a>
           <a href="#ubicacion"><span>Ubicacion</span></a>
           <a href="#etc"><span>ETC</span></a>
-          <div class="menu-movil">
+          <!-- <div href="javascript:void(0);" class="menu-movil" onclick="myFunction()">
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </div> -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+          </a>
         </nav>
+
   </div>
+  <div id="myLinks">
+    <a href="#nuestro-servicio"><span>Servicio</span></a>
+    <a href="#quienes-somos"><span>Quienes Somos</span></a>
+    <a href="#ubicacion"><span>Ubicacion</span></a>
+    <a href="#etc"><span>ETC</span></a>
+   </div>
 </header>
 
 
@@ -78,16 +88,55 @@
 </section>
 
 <div class="servicio contenedor clearfix">
-
-   <div class="precio">
+   <div class="precio clearfix">
      <ul>
+       <li class="mayor">
+         <h3>Raza Pequena</h3> <br>
+          <img src="img/perri1.png" alt=""> <br>
+          <p>$15.000</p>
+          <ul>
+            <li>Bano antiparasitario </li>
+            <li>Corte de pelo </li>
+            <li>Cepillado </li>
+            <li>Corte de unas </li>
+            <li>Vaciado de glandulas </li>
+          </ul>
+        </li>
+       <li class="mayor">
+         <h3>Raza Mediana</h3> <br>
+         <img src="img/perri3.png" alt=""> <br>
+         <p>$20.000</p>
+         <ul>
+           <li>Bano antiparasitario </li>
+           <li>Corte de pelo </li>
+           <li>Cepillado </li>
+           <li>Corte de unas </li>
+           <li>Vaciado de glandulas </li>
+         </ul>
+       </li>
+       <li class="mayor">
+         <h3>Raza Grande</h3> <br>
+         <img src="img/perri2.png" alt=""> <br>
+         <p>$25.000</p>
+         <ul>
+           <li>Bano antiparasitario </li>
+           <li>Corte de pelo </li>
+           <li>Cepillado </li>
+           <li>Corte de unas </li>
+           <li>Vaciado de glandulas </li>
+         </ul>
+       </li>
+     </ul>
+
+
+     <!-- <ul>
      <li>Raza pequena <span>$10.000</span></li>
      <li>Raza mediana <span>$15.000</span></li>
      <li>Raza grande<span>$20.000</span></li>
      <li>*Precio ajustable a la condicion de su Patyperro</li>
-     </ul>
+     </ul> -->
    </div>
-   <div class="listado">
+   <!-- <div class="listado">
    <ul>
      <li>Bano antiparasitario <img src="img/circulo5.png" alt=""></li>
      <li>Corte de pelo <img src="img/circulo5.png" alt=""></li>
@@ -95,7 +144,7 @@
      <li>Corte de unas <img src="img/circulo5.png" alt=""></li>
      <li>Vaciado de glandulas <img src="img/circulo5.png" alt=""></li>
    </ul>
-  </div>
+  </div> -->
 </div>
 
 <section class="seccion contenedor">
@@ -145,7 +194,16 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

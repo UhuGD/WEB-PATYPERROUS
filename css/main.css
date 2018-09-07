@@ -286,12 +286,50 @@ nav.atajos a:hover{
   color: #0da09c;
   transition: all .5s ease;
 }
+
+header #myLinks {
+  display: none;
+  z-index: 500
+}
+/* Style navigation menu links */
+
+#myLinks a{
+  color: #4f4f4f;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  background: #DADADA;
+}
+
+/* Style the hamburger menu */
+nav.atajos a.icon {
+  height: 40px;
+  background: transparent;
+  display: block;
+  position: absolute;
+  right: 0;
+  top:0;
+  padding: 14px 16px;
+}
+
+/* Add a grey background color on mouse-over */
+nav.atajos a:hover {
+  background-color:;
+  color:;
+}
+
+
 @media only screen and (min-width:768px){
+  nav.atajos  i{
+    display: none;
+  }
   div.contenido-header{
     position:fixed;
     top:0;
     width:100%;
     transition: background-color 300ms ease;
+    z-index: 500;
   }
   .contenido-header.scrolled {
   background-color: #d3d3d3 !important;
@@ -396,43 +434,54 @@ div.imagenes-bajobanner p{
     margin-bottom: 20px;
   }
 }
+
 div.precio{
-  width:80%;
-  margin: 0 auto;
+  text-align: center;
+
 }
-div.precio img{
-  width: 80%;
-  margin: 0 auto;
+div.precio ul li.mayor{
+  display: inline-block;
+  width: 25%;
+  list-style: none;
+  height: auto;
+  padding-top: 12px;
+  margin-right: 50px;
+  border:solid 10px #DADADA;;
+  text-align: center;
+  transition: all .4s ease-in-out;
+  margin-bottom: 30px;
+}
+div.precio ul li.mayor:hover{
+ border:solid 10px #0da09c;
+ transition: all .5s ease;
+ transform: scale(1.05);
+-webkit-font-smoothing: antialiased;
 }
 
-div.precio ul{
-  /* border-right: solid 1px #000000;
-  border-top: solid 1px #000000;
-  border-left: solid 1px #000000; */
-  text-align:left;
-  padding-left: 0;
+div.precio ul li h3{
+
+  font-size: 1.2em;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
-div.precio ul li{
-  /* border-bottom: solid 1px #000000; */
- list-style: none;
- padding-top:10px;
- padding-bottom: 10px;
- padding-left: 40px;
- padding-right: 40px;
- background-color:#a6a6a6;
- color:#4f4f4f;
+div.precio ul li p{
+  font-size: 2.5em;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
-div.precio ul li:nth-child(even){
-  background-color: #d3d3d3;
-}
-
 div.precio ul li span{
-  float:right;
+ display:block;
 }
-
-
-
+div.precio ul li img{
+ width:40%;
+}
+div.precio ul ul{
+  padding-left: 0px;
+  text-align: center;
+  list-style: none;
+  margin-bottom: 10px;
+}
 
 div.listado{
   width: 80%;
@@ -473,13 +522,10 @@ div.listado ul li img{
 @media only screen and (min-width:876px){
 
   div.listado{
-    width: 50%;
-    float:right;
+    width: 100%;
+
   }
-  div.precio{
-    width:50%;
-    float:left;
-  }
+
 }
 @media only screen and (min-width:1200px){
   div.servicio{
@@ -497,10 +543,6 @@ div.imgquienesomos img{
   div.listado{
     width:384px;
   }
-  div.precio{
-    width:384px;
-  }
-
 }
 
 div.imgquienesomos img{
