@@ -131,7 +131,14 @@ body{
 }
 @media only screen and (min-width:992px){
   .contenedor{
-    width:90%;
+    width:1250px;
+  }
+
+}
+
+@media only screen and (min-width:1350px){
+  .contenedor{
+    width:1300px;
   }
 
 }
@@ -272,6 +279,18 @@ nav.atajos{
   background-color: rgba(255,255,255,0.5);
 }
 
+
+a.feis img {
+  height: 35px;
+  margin-bottom: 5px;
+}
+
+  nav.atajos a:first-child{
+    display:block;
+    margin-right: 60px;
+    padding-top: 6px;
+  }
+
 nav.atajos a{
   display:none;
   color: black;
@@ -294,12 +313,12 @@ header #myLinks {
 /* Style navigation menu links */
 
 #myLinks a{
-  color: #4f4f4f;
-  padding: 10px 16px;
+  color: white;
+  padding: 3vw 30px;
   text-decoration: none;
   font-size: 17px;
   display: block;
-  background: #DADADA;
+  background: #4f4f4f;
 }
 
 /* Style the hamburger menu */
@@ -350,13 +369,26 @@ nav.atajos a:hover {
     padding-right: 15px;
     border-right: solid 0.5px #DADADA;
 }
-nav.atajos a:nth-child(4){
+nav.atajos a:nth-child(5){
   margin-right: 50px;
 }
-nav.atajos a:nth-child(4){
+nav.atajos a:nth-child(5){
   border-right: none;
 }
+nav.atajos a:nth-child(6){
+  border-right:
 }
+nav.atajos a:first-child{
+  display:inline-block;
+  margin-right: 15px;
+
+}
+
+}
+
+
+
+
 @media only screen and (min-width:992px){
   nav.atajos a:last-child{
     margin-right: 100px;
@@ -439,14 +471,17 @@ div.precio{
   text-align: center;
 
 }
+div.precio ul{
+ padding-left: 0;
+}
 div.precio ul li.mayor{
-  display: inline-block;
-  width: 25%;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
   list-style: none;
   height: auto;
   padding-top: 12px;
-  margin-right: 50px;
-  border:solid 10px #DADADA;;
+  border:solid 10px #0da09c;;
   text-align: center;
   transition: all .4s ease-in-out;
   margin-bottom: 30px;
@@ -459,7 +494,6 @@ div.precio ul li.mayor:hover{
 }
 
 div.precio ul li h3{
-
   font-size: 1.2em;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -483,80 +517,37 @@ div.precio ul ul{
   margin-bottom: 10px;
 }
 
-div.listado{
-  width: 80%;
-  margin: 0 auto;
-}
+@media only screen and (min-width:768px){
+ div.precio ul li.mayor{
+   display:inline-block;
+   width: 25%;
+  margin-right: 50px;
+   border:solid 10px #DADADA;
+ }
 
-div.listado ul{
-  text-align:left;
-  padding-left: 0;
-  margin-bottom: 50px;
-}
-
-div.listado ul li{
- list-style: none;
- padding-top:8px;
- padding-bottom: 8px;
- padding-left: 40px;
- padding-right: 40px;
- background-color: #a6a6a6;
-
- color:#4f4f4f;
-}
-
-div.listado ul li:nth-child(even){
-
-background-color: #D3D3D3;
-}
-
-div.listado ul li img{
-  float:right;
-  position: relative;
-  top: 50%;
-  transform: translateY(10%);
-  height:30px;
-  width:auto;
-}
-
-@media only screen and (min-width:876px){
-
-  div.listado{
-    width: 100%;
-
-  }
-
-}
-@media only screen and (min-width:1200px){
-  div.servicio{
-    padding-left: 10%;
-    padding-right: 10%;
-  }
 }
 
 div.imgquienesomos img{
-  width:100%;
-  height:auto;
-}
-
-@media only screen and (min-width:876px){
-  div.listado{
-    width:384px;
-  }
-}
-
-div.imgquienesomos img{
-  float:left;
-  width: 67%;
+  width: 100%;
   height:300px;
 }
 div.pquienesomos{
-  float:right;
-  width:33%;
+  width:100%;
   margin:0;
-  height: 300px;
-  background-color: #a6a6a6;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 25px;
 }
+div.pquienesomos p{
+margin-top: 0;
+}
+
+@media only screen and (min-width:768px){
+  div.pquienesomos{
+    height: 160px;
+  }
+}
+
 div.pquienesomos h3{
   margin-top: 30px;
   text-transform: uppercase;
@@ -602,6 +593,7 @@ footer{
   height: 120px;
 }
 footer ul li{
+  font-size: 0.8em;
   padding-top: 10px;
   list-style: none;
   color:#DADADA;
@@ -619,6 +611,11 @@ footer ul li{
     float:left;
     text-align: center;
   }
+  footer ul li.feisini{
+    padding-top: 38px;
+
+  }
+
   div.nombre li{
     text-align: left;
   }
