@@ -526,12 +526,16 @@ div.precio ul ul{
  }
  div.precio ul li.mayork{
    margin-right: 0px;
-
+}
 }
 
+div.imgquienesomos{
+  text-align: center;
+}
 div.imgquienesomos img{
-  width: 100%;
-  height:300px;
+
+  width:70vw;
+  height:46vw;
 }
 div.pquienesomos{
   width: 80%;
