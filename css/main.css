@@ -524,6 +524,8 @@ div.precio ul ul{
   margin-right: 50px;
    border:solid 10px #DADADA;
  }
+ div.precio ul li.mayork{
+   margin-right: 0px;
 
 }
 
