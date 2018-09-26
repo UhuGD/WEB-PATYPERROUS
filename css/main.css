@@ -319,6 +319,8 @@ header #myLinks {
   font-size: 17px;
   display: block;
   background: #4f4f4f;
+  transition: 0.4s;
+  border-bottom: solid 0.2px #3f3f3f;
 }
 
 /* Style the hamburger menu */
