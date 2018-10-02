@@ -131,8 +131,8 @@ body{
 }
 @media only screen and (min-width:992px){
   .contenedor{
-    width:1250px;
-  }
+    width:98%;
+   }
 
 }
 
@@ -242,7 +242,7 @@ header{
 
 @media only screen and (min-width:768px){
   header{
-    width:100vw;
+    width:98.7vw;
     height: 47vw;
 
   }

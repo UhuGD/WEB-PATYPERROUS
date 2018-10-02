@@ -10,7 +10,7 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <!-- Place favicon.ico in the root directfmaory -->
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.css">
@@ -20,6 +20,9 @@
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="css/main.css">
 </head>
+
+
+
 
 <body>
   <!--[if lte IE 9]>
@@ -161,12 +164,13 @@
     <p id="cita"> - Patricia y Jessica</p>
 
   </div>
+
 </div>
 
 <div class="seccion contenedor">
   <h2 id="ubicacion">Ubicacion</h2>
 </div>
-<div class="contenedor">
+<div class="">
   <div id='map' class="mapiti"></div>
 </div>
 
@@ -179,7 +183,7 @@
 <footer>
   <ul class="Clearfix">
   <div class="nombre">
-    <li>Telefono: +5698465432 </li>
+    <li>Telefono: +56985954249 </li>
     </div>
   <div class="direccion">
     <li class="feisini"><a target="_blank"  class="feis" href="https://www.facebook.com/PeluPatyPerros/?ref=br_rs"><img src="img/fb.png" alt=""></a>
@@ -190,6 +194,7 @@
 </ul>
 
 </footer>
+
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -207,11 +212,31 @@
   }
   </script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
+  <!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "1896565790623411", // Facebook page ID
+            whatsapp: "+56985954249", // WhatsApp number
+            call_to_action: "Contactanos y pide una hora!", // Call to action
+            button_color: "#129BF4", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "facebook,whatsapp", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
 </body>
 
 </html>
