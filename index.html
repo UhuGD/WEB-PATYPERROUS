@@ -14,11 +14,14 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.css">
+  <style type="text/css">    #wh-widget-send-button {        margin: 0 !important;        padding: 0 !important;        position: fixed !important;        z-index: 16000160 !important;        bottom: 0 !important;        text-align: center !important;        height: 90px;        width: 60px;        visibility: visible;        transition: none !important;    }    #wh-widget-send-button.wh-widget-right {        right: 0;    }    #wh-widget-send-button.wh-widget-left {        left: 10px;    }    #wh-widget-send-button iframe {        width: 100%;        height: 100%;        border: 0;    }div.clear {    clear: both;}</style>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.js'></script>
   <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.48.0/mapbox-gl.css' rel='stylesheet' />
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
 </head>
 
 
@@ -37,7 +40,11 @@
         <img src="img/logo.png" alt="" class="logo">
       </div>
         <nav id="top" class="atajos">
-          <a  class="feis" href="https://www.facebook.com/PeluPatyPerros/?ref=br_rs"><img src="img/fb.png" alt=""></a>
+
+          <!-- <a  class="feis" href="https://www.facebook.com/PeluPatyPerros/?ref=br_rs"><img src="img/fb.png" alt=""></a> -->
+
+
+          <a  class="feis" href="https://wa.me/+56985029150"><img src="img/fb.png" alt=""></a>
           <a href="#nuestro-servicio"><span>Servicio</span></a>
           <a href="#quienes-somos"><span>Quienes Somos</span></a>
           <a href="#ubicacion"><span>Ubicacion</span></a>
@@ -178,7 +185,14 @@
   <p>Nos encontramos en <span> Av. Departamental #4029</span>, a pasos de Av. Tobalaba</p>
 </div>
 
+<a href="https://api.whatsapp.com/send?phone=56985029150" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
 
+
+<a href="https://m.me/PeluPatyPerros" class="float2" target="_blank">
+<i class="fab fa-facebook-messenger my-float2"></i>
+</a>
 
 <footer>
   <ul class="Clearfix">
@@ -228,13 +242,18 @@
             position: "right", // Position may be 'right' or 'left'
             order: "facebook,whatsapp", // Order of buttons
         };
-        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto +"//static." + host;
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
         s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
 </script>
+
+
 <!-- /WhatsHelp.io widget -->
+
+
+
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
 </body>

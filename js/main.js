@@ -5,6 +5,22 @@ $(function () {
   });
 });
 
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".float");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".float2");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
