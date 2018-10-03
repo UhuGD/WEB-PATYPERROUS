@@ -647,7 +647,6 @@ h2{
 }
 
 .float{
-  display:none;
 	position:fixed;
 	width:50px;
 	height:50px;
@@ -662,10 +661,9 @@ h2{
   z-index:100;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 .float2{
-  display: none;
 	position:fixed;
 	width:50px;
 	height:50px;
@@ -680,18 +678,15 @@ h2{
   z-index:100;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .float.scrolled{
-display:block;
 visibility: visible;
 opacity: 1;
-transition:opacity 0.5s linear;
-
+transition: visibility 0s, opacity 0.5s linear;
 }
 .float2.scrolled{
-display:block;
 visibility: visible;
   opacity: 1;
 }
